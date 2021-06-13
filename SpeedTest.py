@@ -93,8 +93,6 @@ def game():
     btn3.place(x=365, y=470)
     lbl3 = Label(window1, text="Hit Enter to submit", bg="grey", fg="black", font="aerial 24")
     lbl3.place(x=250, y=400)
-    # btn4 = Button(window1, text="Submit", bg="blue", fg="black", font="times 24", command=check_result)
-    # btn4.place(x=600, y=225)
     window1.bind("<Return>", check_result)
     start = timer()
     window1.mainloop()
@@ -116,9 +114,3 @@ hs_value = int(hs.readline())
 h_score = Label(base, text=f"{hs_name} : {hs_value} WPM", fg="black", bg="grey", font="times 26")
 h_score.place(x=300, y=475)
 base.mainloop()
-
-"""
-To DO
-
-
-change the colour scheme after consultation"""
